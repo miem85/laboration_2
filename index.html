@@ -7,6 +7,7 @@
       name="description"
       content="Information om webbutvecklingsprogrammet vid Mittuniversitetet."
     />
+
     <title>Webbutveckling | Mittuniversitetet</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,12 +21,65 @@
   </head>
 
   <body>
+    <!-- Sidhuvud -->
+
     <header class="site-header">
-      <div class="container">
-        <p class="site-name">Mittuniversitetet</p>
-        <p>Utbildning på distans</p>
+      <div class="container header-layout">
+        <div class="header-menu" aria-hidden="true">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path d="M3 6h18 M3 12h18 M3 18h18" />
+          </svg>
+          <span>Meny</span>
+        </div>
+
+        <img
+          class="site-logo"
+          src="images/mittuniversitetet_logo.png"
+          alt="Mittuniversitetet"
+          width="225"
+          height="111"
+        />
+
+        <div class="header-search" aria-hidden="true">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="m16 16 5 5" />
+          </svg>
+          <span>Sök</span>
+        </div>
+      </div>
+
+      <!-- Brödsmulor -->
+
+      <div class="breadcrumb-bar">
+        <div class="container">
+          <ol class="breadcrumbs" aria-label="Illustrerad sidstruktur">
+            <li>Start</li>
+            <li>Utbildning</li>
+            <li>Sök program</li>
+            <li aria-current="page">Webbutveckling</li>
+          </ol>
+        </div>
       </div>
     </header>
+
+    <!-- Huvudinnehåll -->
 
     <main class="container">
       <article>
@@ -233,10 +287,16 @@
       </article>
     </main>
 
+    <!-- Sidfot -->
+
     <footer class="site-footer">
       <div class="container">
         <p>Laboration 2 | DT068G Webbanvändbarhet</p>
         <p>Skapad av Mikael Emanuelsson, HT2026.</p>
+        <p>
+          Detta är ett studentarbete och inte Mittuniversitetets officiella
+          webbplats. Meny och sökfunktion är endast visuella exempel.
+        </p>
       </div>
     </footer>
   </body>
